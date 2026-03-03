@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Manifestation Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- PINTEREST TAG BASE CODE WILL GO HERE -->
+</head>
+<body>
+    <div class="stars-container"></div>
+    
+    <div class="container">
+        <div class="glass-box">
+            <header>
+                <h1>Discover What the Universe is Trying to Tell You...</h1>
+                <p>Take this 30-second cosmic quiz to unlock your personalized Moon Reading and manifest your deepest desires.</p>
+            </header>
+
+            <div id="quiz-container">
+                <!-- Question 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <h3>How connected do you feel to your intuition lately?</h3>
+                    <div class="options">
+                        <button class="option-btn" onclick="nextStep(2)">Very Connected</button>
+                        <button class="option-btn" onclick="nextStep(2)">Somewhat Connected</button>
+                        <button class="option-btn" onclick="nextStep(2)">Lost and Looking for Guidance</button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h3>What is your primary goal right now?</h3>
+                    <div class="options">
+                        <button class="option-btn" onclick="nextStep(3)">Financial Abundance</button>
+                        <button class="option-btn" onclick="nextStep(3)">Deep Romantic Connection</button>
+                        <button class="option-btn" onclick="nextStep(3)">Inner Peace & Purpose</button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h3>Do you believe the Moon's phases influence your energy?</h3>
+                    <div class="options">
+                        <button class="option-btn" onclick="finishQuiz()">Yes, Absolutely</button>
+                        <button class="option-btn" onclick="finishQuiz()">I'm curious to find out</button>
+                        <button class="option-btn" onclick="finishQuiz()">Not sure</button>
+                    </div>
+                </div>
+
+                <!-- Final Step -->
+                <div class="quiz-step" id="loading-step">
+                    <h3>Aligning your cosmic map...</h3>
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Cosmic Insights. <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+            <p class="affiliate-disclosure">Disclaimer: This site contains affiliate links to products. We may receive a commission for purchases made through these links.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
