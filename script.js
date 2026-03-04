@@ -5,7 +5,7 @@ function nextStep(step) {
     });
 
     // Show selected step
-    const nextEl = document.querySelector(.quiz-step[data-step="${step}"]);
+    const nextEl = document.querySelector('.quiz-step[data-step="' + step + '"]');
     if (nextEl) {
         nextEl.classList.add('active');
     }
